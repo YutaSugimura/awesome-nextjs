@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import UserProvider, { useUser } from '../src/context/userContext';
+import { useUser } from '../src/context/userContext';
 import firebase from '../src/firebase';
 
-const Home: React.FC = () => {
+const Page: React.FC = () => {
   const { user, loadingUser, set } = useUser();
 
   const login = () => {
@@ -218,13 +218,4 @@ const Home: React.FC = () => {
     </div>
   );
 };
-
-const Page: React.FC = () => {
-  return (
-    <UserProvider>
-      <Home />
-    </UserProvider>
-  );
-};
-
 export default Page;
