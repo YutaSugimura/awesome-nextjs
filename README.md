@@ -12,7 +12,7 @@
 - [styled-components](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/styled-components)
 - [tailwindcss](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/tailwindcss)
 
-## Refe
+## References
 
 - [Documentation](https://nextjs.org/)
 - [github](https://github.com/zeit/next.js)
