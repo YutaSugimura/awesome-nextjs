@@ -1,5 +1,14 @@
-# Recoil
+# with Recoil
 
-### url
+## How to use
 
-https://recoiljs.org/docs/introduction/motivation
+Install it and run:
+
+```zsh
+yarn install
+yarn dev
+```
+
+## References
+
+- [recoiljs](https://recoiljs.org/docs/introduction/motivation)
