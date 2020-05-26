@@ -20,15 +20,13 @@
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "project": "./tsconfig.json",
     "ecmaFeatures": {
       "jsx": true,
       "tsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    }
   },
   "rules": {
     "no-undef": "warn",
@@ -36,7 +34,7 @@
     "no-shadow": "error",
     "no-sparse-arrays": "error",
     "dot-notation": "error",
-    "@typescript-eslint/ban-ts-ignore": "error",
+    "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-empty-interface": "error",
     "@typescript-eslint/no-empty-interface": "error",
