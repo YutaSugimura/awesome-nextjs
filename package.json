@@ -13,20 +13,20 @@
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .eslintignore --fix"
   },
   "dependencies": {
-    "next": "9.4.2",
+    "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.0.4",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/jest": "^25.2.3",
-    "@types/node": "^14.0.5",
+    "@types/node": "^14.0.6",
     "@types/react": "^16.9.35",
     "@types/react-test-renderer": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -35,7 +35,7 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1",
-    "ts-jest": "^26.0.0",
+    "ts-jest": "^26.1.0",
     "typescript": "^3.9.3"
   }
 }
