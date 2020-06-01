@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { useRecoilState } from "recoil";
-import { powState } from "../src/recoil";
+import Link from 'next/link';
+import { useRecoilState } from 'recoil';
+import { powState } from '../src/recoil';
 
 const Page = () => {
   const [counter, setCounter] = useRecoilState(powState);

@@ -1,12 +1,12 @@
-import { atom, selector } from "recoil";
+import { atom, selector } from 'recoil';
 
 export const counterState = atom({
-  key: "counter",
+  key: 'counter',
   default: 0,
 });
 
 export const powState = selector({
-  key: "tempCelcius",
+  key: 'tempCelcius',
   get: ({ get }) => {
     return get(counterState);
   },

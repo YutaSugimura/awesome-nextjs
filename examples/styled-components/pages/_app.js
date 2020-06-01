@@ -1,8 +1,8 @@
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
-    primary: "#0070f3",
+    primary: '#0070f3',
   },
 };
 

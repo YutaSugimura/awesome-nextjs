@@ -1,11 +1,11 @@
 import Head from 'next/head';
 
-export const getServerSideProps = async() => {
+export const getServerSideProps = async () => {
   const res = await fetch('http://localhost:3000/api/hello');
   const data = await res.json();
   const docs = data.docs;
-  return { props: { docs }}
-}
+  return { props: { docs } };
+};
 
 const Home = ({ docs }) => {
   return (
@@ -16,10 +16,11 @@ const Home = ({ docs }) => {
       </Head>
       <div>
         {docs.length > 0 &&
-          docs.map((value, index) => <p key={index}>{JSON.stringify(value)}</p>)
-        }
+          docs.map((value, index) => (
+            <p key={index}>{JSON.stringify(value)}</p>
+          ))}
       </div>
     </div>
-  )
-}
+  );
+};
 export default Home;

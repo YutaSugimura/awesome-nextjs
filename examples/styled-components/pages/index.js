@@ -1,6 +1,6 @@
-import Head from "next/head";
-import Title from "../src/Components/title";
-import Typo from "../src/Components/typo";
+import Head from 'next/head';
+import Title from '../src/Components/title';
+import Typo from '../src/Components/typo';
 
 const Home = () => {
   return (

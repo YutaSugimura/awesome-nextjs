@@ -4,13 +4,13 @@ const url = 'mongodb://root:example@localhost:27017';
 const dbName = 'examples';
 
 const connectOptions = {
-  useUnifiedTopology: true
-}
+  useUnifiedTopology: true,
+};
 
 const client = new MongoClient(url, connectOptions);
 
-const api = async(req, res) => {
-  if(!client.isConnected()) {
+const api = async (req, res) => {
+  if (!client.isConnected()) {
     await client.connect();
   }
 
@@ -18,7 +18,6 @@ const api = async(req, res) => {
   const data = body.data;
 
   res.json(data);
-
 
   const db = client.db(dbName);
   const collection = db.collection('inventory');
@@ -30,5 +29,5 @@ const api = async(req, res) => {
     res.statusCode = 500;
     res.json({ message: 'Server Error' });
   }
-}
+};
 export default api;

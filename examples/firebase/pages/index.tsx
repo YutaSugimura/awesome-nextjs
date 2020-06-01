@@ -9,14 +9,14 @@ const Page: React.FC = () => {
     firebase
       .auth()
       .signInAnonymously()
-      .catch((error) => {
+      .catch((error: any) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log('errorCode: ', errorCode);
         console.log('errorMessage: ', errorMessage);
       });
 
-    firebase.auth().onAuthStateChanged(function (newUser) {
+    firebase.auth().onAuthStateChanged(function (newUser: any) {
       if (newUser) {
         const { displayName, uid, photoURL, email } = newUser;
         set(uid, displayName, photoURL, email);
@@ -28,7 +28,9 @@ const Page: React.FC = () => {
     try {
       await firebase.auth().signOut();
       set('', '', '', '');
-    } catch {}
+    } catch {
+      console.log('signout');
+    }
   };
 
   return (
