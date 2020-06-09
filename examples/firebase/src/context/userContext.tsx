@@ -23,7 +23,9 @@ const defaultUser = { uid: '', displayName: null, photoURL: null, email: null };
 
 export const UserContext = createContext<useUser>({
   user: defaultUser,
-  set: () => {},
+  set: () => {
+    console.log('set');
+  },
   loadingUser: true,
 });
 
@@ -36,13 +38,12 @@ const Context: React.FC<Props> = ({ children }) => {
   const [user, setUser] = useState<UserState>(defaultUser);
 
   useEffect(() => {
-    const unsubscriber = firebase.auth().onAuthStateChanged(async (user) => {
+    const unsubscriber = firebase.auth().onAuthStateChanged(async (users) => {
       try {
-        if (user) {
-          const { uid, displayName, photoURL, email } = user;
+        if (users !== null) {
+          const { uid, displayName, photoURL, email } = users;
           setUser({ uid, displayName, photoURL, email });
         }
-      } catch {
       } finally {
         setLoadingUser(false);
       }
@@ -71,4 +72,4 @@ const Context: React.FC<Props> = ({ children }) => {
   );
 };
 export default Context;
-export const useUser = () => useContext(UserContext);
+export const useUser = (): useUser => useContext(UserContext);
