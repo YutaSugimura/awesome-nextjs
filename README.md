@@ -6,6 +6,7 @@
   - [firebase](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/firebase)
   - [firebase-hosting](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/firebase-hosting)
 - [GraphQL](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/graphql)
+- [SWR](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/swr)
 - [now(vercel)](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/now)
 - [recoil](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/recoil)
 - [redux-toolkit](https://github.com/YutaSugimura/awesome-nextjs/tree/master/examples/redux-toolkit)
